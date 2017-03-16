@@ -1,4 +1,5 @@
 # set the database based on the current environment
+
 database_name = "horse-#{HorseApp.environment}"
 
 # connect ActiveRecord with the current database
