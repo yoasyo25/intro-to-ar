@@ -10,11 +10,12 @@
     <th>Delete</th>
   </tr>
   <% @horses.each do |horse| %>
-    <tr>
+    <tr class="horse-info">
       <td><%= horse.name %></td>
-      <td><%= horse.breed.name %></td>
-      <td><%= horse.total_winnings %></td>
-      <td><%= horse.jockey.name %></td>
+      <td><%#= horse.breed.name %></td>
+      <td>Age: <%= horse.age %></td>
+      <td>Total Winnings: <%= horse.total_winnings %></td>
+      <td><%#= horse.jockey.name %></td>
       <td><a href="/horses/<%=horse.id %>">Additional Info</a></td>
       <td>
         <form action="/horses/<%= horse.id %>" method="post">
