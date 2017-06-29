@@ -1,0 +1,10 @@
+<div align="center">
+  <h1>Jockey Page</h1>
+
+  <h3>Jockey Name: <%= @jockey.name %></h3>
+  <% @jockey.horses.each do |horse| %>
+  <p>Horse Name: <%= horse.name %>, Total Winnings: <%= horse.total_winnings %></p>
+  <% end %>
+
+<p><%= @jockey.name %>'s horses total winnings: <%= @jockey.horses.total_winnings_by_jockey %></p>
+</div>

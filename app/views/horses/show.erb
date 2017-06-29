@@ -1,0 +1,15 @@
+<p><a href="/horses">Back to Horses Page</a></p>
+
+<div align="center">
+  <h1><%= @horse.name %></h1>
+  <p>Age: <%= @horse.age %></p>
+  <p>Total Winnings: <%= @horse.total_winnings %></p>
+
+  <p><a href="/horses/<%= @horse.id %>/edit">Edit this Horse</a></p>
+
+  <form action="/horses/<%= @horse.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete this horse"/>
+  </form>
+
+</div>

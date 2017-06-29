@@ -1,0 +1,13 @@
+
+<div align="center">
+  <h1>Update this Horse</h1>
+  <form class="" action="/horses/<%= @horse.id %>" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <label for="name">Name</label>
+    <input type="text" name="horse[name]" value="<%= @horse.name %>"></br>
+    <label for="age">Age</label>
+    <input type="text" name="horse[age]" value="<%= @horse.age %>"></br>
+    <label for="age">Total Winnings</label>
+    <input type="text" name="horse[total_winnings]" value="<%= @horse.total_winnings %>"></br>
+    <input type="submit">
+  </form>
